@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Paper Block</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@1,300&family=Oswald&family=Shalimar&display=swap" rel="stylesheet">
+    <style>
+    
+        body {
+            background-size: 100% 100%;}
+        *{
+            margin: 0;
+            padding: 0;}
+       
+        .container1{    
+            display: flex;
+            justify-content: center;
+            background-color: #0000ff00;
+          
+        margin: 0px 399px;
+      }
+              /* .logo{} */
+
+              a{
+                text-decoration: none;
+              }
+        
+        .navbar{    
+            display: flex;
+            list-style-type: none;
+          z-index: 1;}
+        
+        .navcontent{   
+             /* padding-left: 10px; */
+             margin: 13px;
+             font-size: 1.4em;
+             padding: 2px 10px;
+             color: black;
+             font-weight: bold}
+        
+        .navcontent:hover{
+            color: white;
+            background-color: black;
+            border-radius: 10px;
+            cursor: pointer;
+          }
+        
+        .container1{
+            display: flex;} 
+
+            .slideshow-container * {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active{background-color: white;}
+
+.dot:hover {
+  background-color: #d1bfbf;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+        
+        .logoimg{
+            border: 0px solid white;
+            border-radius: 286px;
+            /* margin: auto; */
+            margin: 26px 29px;
+            height: 428px;}
+       
+        .aboutus{
+            font-size: 2.4rem;
+            font-weight: 500;
+            padding-top: -2px;
+        margin-left: 36px;
+    font-size: 4rem;}
+        
+        .headabout{
+            font-family: 'Oswald', sans-serif;
+            font-size: 2em;}
+        
+        .aboutuscntent{
+            font-size: 2rem;}
+        
+
+        
+        .donatea{ 
+            margin: 590px;}
+        
+        .donatebtn{
+            height: 73px;
+            width: 338px;
+            font-size: 57px;
+            background: #003933de;
+            color: white;
+            border: 0px solid white;
+            border-radius: 14px;
+            transition: all 0.5s ease;
+            font-family: Georgia, 'Times New Roman', Times, serif;}
+        
+        .donatebtn:hover{
+            cursor: pointer;
+            background-color: rgb(58, 35, 35);
+          height: 100px;
+        width: 400px;
+      border-radius: 60px;
+      box-shadow: 6px 5px 26px 10px grey;}
+            
+           
+
+.vwrap, .vitem {
+  height: 300px;
+  line-height: 30px;
+}
+ 
+
+.vwrap {
+  margin: 10px 32px ;
+  overflow: hidden; 
+  background: #eee;
+}
+/* (C) TICKER ITEMS */
+.vitem { text-align: center; }
+ 
+/* (D) ANIMATION - MOVE ITEMS FROM TOP TO BOTTOM */
+/* CHANGE KEYFRAMES IF YOU ADD/REMOVE ITEMS */
+.vmove { position: relative; }
+@keyframes tickerv {
+  0% { bottom: 0; } /* FIRST ITEM */
+  30% { bottom: 300px; } /* SECOND ITEM */
+  60% { bottom: 600px; } /* THIRD ITEM */
+  90% { bottom: 700px; } /* FORTH ITEM */
+  100% { bottom: 0px; } /* BACK TO FIRST */
+}
+.vmove {
+  animation-name: tickerv;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(1, 0, .5, 1);
+}
+.vmove:hover { animation-play-state: paused;
+cursor: grab; }
+
+
+
+.helpimg{height: 162px;}
+
+
+
+section{
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .container{
+    margin: 0px 100px 100px 100px;
+  border: 0px solid;
+    border-radius: 40px;
+}
+
+section h1{
+  font-size: 3rem;
+  margin: 20px;
+}
+section h2{
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+/* section .text-container{
+
+} */
+section .text-container .text-box{
+  margin: 20px;
+  padding: 20px;
+  
+  background: #d8d8d8;
+    border: 0px solid;
+    border-radius: 32px;
+    text-align: center;
+    font-size: 21px;
+}
+section .text-container .text-box h3{
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 900px){
+  section h1{
+    font-size: 2rem;
+    text-align: center;
+  }
+  section .text-container{
+    flex-direction: column;
+  }
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+footer *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+  text-decoration: none;
+}
+footer{
+  width: 100%;
+  margin-top: 169px;
+  bottom: 0;
+  left: 0;
+  background: #111;
+}
+footer .content{
+  max-width: 1350px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+footer .content p,a{
+  color: #fff;
+}
+footer .content .box{
+  width: 33%;
+  transition: all 0.4s ease;
+}
+footer .content .topic{
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 16px;
+
+}
+footer .content p{
+  text-align: justify;
+}
+footer .content .lower .topic{
+  margin: 24px 0 5px 0;
+}
+footer .content .lower i{
+  padding-right: 16px;
+}
+footer .content .middle{
+  padding-left: 80px;
+}
+footer .content .middle a{
+  line-height: 32px;
+}
+footer .content .right input[type="text"]{
+  height: 45px;
+  width: 100%;
+  outline: none;
+  color: #d9d9d9;
+  background: #000;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 17px;
+  border: 2px solid #222222;
+}
+footer .content .right input[type="submit"]{
+  height: 42px;
+  width: 100%;
+  font-size: 18px;
+  color: black;
+  background: #06eb2f;
+  outline: none;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin-top: 12px;
+  border: 2px solid #06eb3f;
+  transition: all 0.3s ease-in-out;
+}
+.content .right input[type="submit"]:hover{
+  background: none;
+  color:  #06eb3f;
+}
+footer .content .media-icons a{
+  font-size: 16px;
+  height: 45px;
+  width: 45px;
+  display: inline-block;
+  text-align: center;
+  line-height: 43px;
+  border-radius: 5px;
+  border: 2px solid #222222;
+  margin: 30px 5px 0 0;
+  transition: all 0.3s ease;
+}
+.content .media-icons a:hover{
+  border-color: #06eb25;
+}
+footer .bottom{
+  width: 100%;
+  text-align: right;
+  color: #d9d9d9;
+  padding: 0 40px 5px 0;
+}
+footer .bottom a{
+  color: #06eb3f;
+}
+footer a{
+  transition: all 0.6s ease;
+}
+footer a:hover{
+  color: #06eb3f;
+}
+@media (max-width:1100px) {
+  footer .content .middle{
+    padding-left: 50px;
+  }
+}
+@media (max-width:950px){
+  footer .content .box{
+    width: 50%;
+  }
+  .content .right{
+    margin-top: 40px;
+  }
+}
+@media (max-width:560px){
+  footer{
+    position: relative;
+  }
+  footer .content .box{
+    width: 100%;
+    margin-top: 30px;
+  }
+  footer .content .middle{
+    padding-left: 0;
+  }
+}
+.experth1{text-align: center;
+    margin: 151px 0px 55px;
+    font-size: 3em;
+    font-style: italic;
+    font-weight: bolder;}
+
+
+a{text-decoration: none;}
+hr{height: 34px;
+    background: #b2b2b233;
+    margin: 211px 12px;
+    border: 1px solid;
+    border-radius: 100px;
+    box-shadow: 6px 5px 26px 0px grey;}
+    </style>
+</head>
+<body style="background-color: #ffffff;">
+
+    <div class="container1">
+        <!-- <img class="logo" src="C:\Users\Hello\Downloads\WhatsApp Image 2021-12-15 at 7.34.29 PM.jpeg" >  -->
+        <ul class="navbar">
+            
+           <a href="anmpg1intro.html"><li  class="navcontent">Home</li></a> 
+            <li class="navcontent">Help</li>
+            <li class="navcontent">Support</li>
+          <a href=> <li class="navcontent">News</li></a> 
+            <li class="navcontent">Imformation</li>
+            <a href="aboutus.html"><li class="navcontent"> About&nbsp;us </li></a>
+        </ul> 
+    </div>
+    <a href=""><img style="width: 100%;    margin-top: -60px;
+      /* z-index: -1; */
+      height: 441px;
+      opacity: 0.9;" src="to-place.jpeg" alt=""></a>
+    <div class="container" >
+       
+            <div class="aboutus"><p class="headabout">About Us</p>
+                <p class="aboutuscntent">
+               <span> Paper Block</span>is a not-for-profit, non- religious, non-sectarian public charitable trust formed
+                on dec 16, 2021 and registered under the section 36. Through our various programs, we have 
+                been consistently working towards safeguarding and promoting access to nutritious, safe, 
+                and affordable diets to the aphasiac sections of our society.Paper Block is a quick and easy
+                 way for zoo owners across India to raise money using the internet and social media.50+ zoos 
+                have used Paper Block to pay for critical medical treatments such as cancer care
+                 or transplant, support disaster relief work and also renovation and breading ,best part is
+                 yet to come it requires no payback. </p></div>
+        
+    </div>
+    <hr >
+         <h2 style=   " margin: 137px 102px 92px 36px;
+         text-align: center;
+         font-size: 3em;
+         font-style: italic;
+     ">NEWS FEED</h2>  
+     <div class="slideshow-container">
+
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+        <div class="numbertext">#1</div>
+        <img src="news1.png" style="width:100%">
+       
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">#2</div>
+        <img src="news5.png" style="width:100%">
+        
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">#3</div>
+        <img src="news4.png" style="width:100%">
+        
+      </div>
+    
+      <div class="mySlides fade">
+        <div class="numbertext">#4</div>
+        <img src="news3.png" style="width:100%">
+        
+      </div>
+    
+      <div class="mySlides fade">
+        <div class="numbertext">#5</div>
+        <img src="news2.png"width:100%">
+        
+      </div>
+    
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+    </div>  
+     
+     <hr >
+
+
+    <section style="margin: 100px 0px 0px;">
+        <h1>Below are the steps to donate&#8595;</h1>
+      </section>
+      <section>
+        <div class="container reveal">
+          
+          <div class="text-container">
+            <div class="text-box">
+              <h3>#1</h3>
+              <p>
+                Select the zoo you want to help
+              </p>
+            </div>
+            <div class="text-box">
+              <h3>#2</h3>
+              <p>
+                Select the type of animal(Terestial,aqua,ariel)
+              </p>
+            </div>
+            <div class="text-box">
+              <h3>#3</h3>
+              <p>
+                Select the genre in which you to help(food,medicines etc..)
+              </p>
+            </div>
+            <div class="text-box">
+              <h3>#4</h3>
+              <p>
+                Select the animal(s) and proceed to pay
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+<hr>
+<div class="expert">
+  <h1 class="experth1">Famous Coorporations</h1>
+</div>
+      <div class="vwrap" ><div class="vmove">
+        <div class="vitem" style="background: antiquewhite;
+        font-size: 18px;
+        padding: 14px;"><h6>#1</h6> <img src="kitten.jpg" alt="" class="helpimg" id="kitten"><p class="expertpara">At Happy Cats Haven, we take in homeless cats and kittens and find them new, forever homes. We are a non-profit, Fear Free rescue and adoption center and guarantee safe haven for all cats we take in. No healthy or treatable cat is euthanized, which means we meet the definition of a no-kill organization. More important than definitions, we back up this commitment by treating our cats as individuals–with respect, compassion and positive reinforcement. We focus on being fully feline-friendly.</p> </div>
+        <div class="vitem"><h6>#2</h6>  <img src="dog.png" alt="" class="helpimg" id="dog"><p class="expertpara">Pug Nation Rescue of Los Angeles is a registered 501c3 non-profit organization dedicated to the rescue, care, and placement of abandoned, neglected, unwanted, displaced, and abused pugs. Every year Pug Nation saves and adopts out hundreds of loving Pugs from the streets of Southern California – thanks to the support of individuals like you. Our goal is to find every homeless pug a forever home; if we cannot do that, we pledge to provide a comfortable and loving place for sick or unwanted pugs to live out their lives. Our Board of seven and numerous volunteers are passionate about Pug Rescue and live by our motto of “One Pug at a Time”.
+        </p> </div>
+        <div class="vitem"  style="background: antiquewhite;
+        font-size: 18px;
+        padding: 14px;"><h6>#3</h6><img src="animalhelp.png" alt="" class="helpimg" id="anmhelp"><p class="expertpara"> ASI works to expose students, professionals, and scholars to the importance of the human-animal relationship. We provide both students and faculty with access to quality information about the study of human-animal relationships and offer an array of opportunities on how to get involved. ASI also helps to create and improve human-animal studies programs in universities and colleges. We promote scholarly work in human-animal studies and translate that work into something that human and animal service professionals and other scholars can access and use.</p></div>
+        <div class="vitem"><h6>Going to top</h6>
+          </div>
+      </div></div>
+
+
+    
+         
+          
+          
+      
+    <div class="donate" style="
+    margin-top: 105px;
+"><a href="chtpage2zoo.html" class="donatea"><button class="donatebtn">Donate</button></a></div>
+    <footer>
+      <div class="content">
+        <div class="left box">
+          <div class="upper">
+            <div class="topic">About us</div>
+            <p>Paper Block is a platfoem from which one can directly donate to th zoo authorites and communities to help several animals in full filling their basic needs and to make them more comfortable for the zoo and improve their condition</p>
+          </div>
+          <div class="lower">
+            <div class="topic">Contact us</div>
+            <div class="phone">
+              <a href="#"><i class="fas fa-phone-volume"></i>1800-123456</a>
+            </div>
+            <div class="email">
+              <a href="#"><i class="fas fa-envelope"></i>paperblock@gmail.com</a>
+            </div>
+          </div>
+        </div>
+        <div class="middle box">
+          <div class="topic">Our Motto</div>
+          <div><a href="#">Increase the info about animals </a></div>
+          <div><a href="#">Raise awareness in humans</a></div>
+          <div><a href="#">Help animals living in zoo</a></div>
+          <div><a href="#">To hep in more vast area in future</a></div>
+          <div><a href="#">Incres living condition of animals</a></div>
+          <div><a href="#">Funding directly to zoo</a></div>
+        </div>
+        <div class="right box">
+          <div class="topic">Subscribe us</div>
+          <form action="#">
+            <input type="text" placeholder="Enter email address">
+            <input type="submit" name="" value="Send">
+            <div class="media-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="bottom">
+        <p>Copyright © 2022 <a href="#">Paper Block</a> All rights reserved</p>
+      </div>
+    </footer>
+   
+   
+
+
+
+    <script>
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+        
+
+
+
+
+    function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().bottom;
+    var elementVisible = 5;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
+
+   
+    </script>
+</body>
+</html>
