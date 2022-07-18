@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoo info</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@1,300&family=Oswald&family=Shalimar&display=swap" rel="stylesheet">
+
+<style>
+        *{
+        margin: 0;
+        padding: 0;
+        
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+        background-color: #003933;}
+        
+    .navbar{    
+        display: flex;
+        list-style-type: none;}
+        
+    .navcontent{   
+        /* padding-left: 10px; */
+        margin: 13px;
+        font-size: 1.4em;
+        padding: 2px 10px;
+        color: white;
+        font-weight: bold}
+        
+    .navcontent:hover{
+        background-color: brown;
+        border: 0px solid brown;
+        border-radius: 10px;
+        cursor: pointer;}
+    
+    .searchdiv{
+        margin-top:10px;
+    }
+    
+    .searchbar{ 
+        position: relative;
+        text-align: center;
+        /* right: 31%; */
+        /* left: 33%; */
+        /* top: 27%; */
+        width: 586px;
+        height: 42px;
+        display: block;
+        margin: 0px auto;
+    font-size: 20px;}
+
+        
+        a{
+            color: black;
+        }
+    
+    .head{
+        text-align: center;
+        font-size: 4em;
+        margin-top: 47px;}
+    
+    .zoo1{
+        display: flex;
+        margin-top: 72px;
+    color: black;}
+    
+    
+    #zoo1id{ 
+        margin: 18px;}
+    
+    .zoo1pic{
+        height: 272px;
+        margin: 25px;
+    transition: all 0.7s;}
+    .zoo1pic:hover{
+        height: 300px;
+    
+    }
+    
+    .zoo1a{
+        text-decoration: none;}
+    
+    .zoo2a{
+        text-decoration: none;}
+    
+    .zoo2{
+        display: flex;
+        margin-top: 33px;
+    color: black;}
+    
+    #zoo2id{
+        margin: 18px; }
+    
+    .zoo2pic{
+        height: 281px;
+        margin: 25px;
+        transition: all 0.7s;}
+    .zoo2pic:hover{
+        height:330px ;
+    }
+    
+    .zoo3{
+        display: flex;
+        margin-top: 33px;
+    color: black;}
+    
+    #zoo3id{
+        margin: 18px;}
+    
+    .zoo3pic{
+        height: 292px;
+        margin: 25px;
+        transition: all 0.7s;}
+    .zoo3pic:hover{
+        height:330px ;
+    }
+    
+    .zoo3a{
+        text-decoration: none;}
+    
+    .zoo4{
+        display: flex;
+        margin-top: 33px;
+    color: black;}
+    
+    #zoo4id{
+        margin: 18px;}
+    
+    .zoo4pic{
+        height: 350px;
+        margin: 25px;
+        transition: all 0.7s;}
+    .zoo4pic:hover{
+        height: 400px;
+    }
+    
+    .zoo4a{
+        text-decoration: none;}
+    
+    @media (max-width:960px){
+        .zoo1{
+            flex-direction: column-reverse;
+        }
+        .zoo2{
+            flex-direction: column;
+        }
+        .zoo3{
+            flex-direction: column-reverse;
+        }
+        .zoo4{
+            flex-direction: column;
+        }
+        /* body{
+            width: min-content;
+        } */
+    }
+    a{text-decoration: none}
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+footer *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+  text-decoration: none;
+}
+footer{
+  width: 100%;
+  margin-top: 169px;
+  bottom: 0;
+  left: 0;
+  background: #111;
+}
+footer .content{
+  max-width: 1350px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+footer .content p,a{
+  color: #fff;
+}
+footer .content .box{
+  width: 33%;
+  transition: all 0.4s ease;
+}
+footer .content .topic{
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 16px;
+
+}
+footer .content p{
+  text-align: justify;
+}
+footer .content .lower .topic{
+  margin: 24px 0 5px 0;
+}
+footer .content .lower i{
+  padding-right: 16px;
+}
+footer .content .middle{
+  padding-left: 80px;
+}
+footer .content .middle a{
+  line-height: 32px;
+}
+footer .content .right input[type="text"]{
+  height: 45px;
+  width: 100%;
+  outline: none;
+  color: #d9d9d9;
+  background: #000;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 17px;
+  border: 2px solid #222222;
+}
+footer .content .right input[type="submit"]{
+  height: 42px;
+  width: 100%;
+  font-size: 18px;
+  color: black;
+  background: #06eb2f;
+  outline: none;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin-top: 12px;
+  border: 2px solid #06eb3f;
+  transition: all 0.3s ease-in-out;
+}
+.content .right input[type="submit"]:hover{
+  background: none;
+  color:  #06eb3f;
+}
+footer .content .media-icons a{
+  font-size: 16px;
+  height: 45px;
+  width: 45px;
+  display: inline-block;
+  text-align: center;
+  line-height: 43px;
+  border-radius: 5px;
+  border: 2px solid #222222;
+  margin: 30px 5px 0 0;
+  transition: all 0.3s ease;
+}
+.content .media-icons a:hover{
+  border-color: #06eb25;
+}
+footer .bottom{
+  width: 100%;
+  text-align: right;
+  color: #d9d9d9;
+  padding: 0 40px 5px 0;
+}
+footer .bottom a{
+  color: #06eb3f;
+}
+footer a{
+  transition: all 0.6s ease;
+}
+footer a:hover{
+  color: #06eb3f;
+}
+@media (max-width:1100px) {
+  footer .content .middle{
+    padding-left: 50px;
+  }
+}
+@media (max-width:950px){
+  footer .content .box{
+    width: 50%;
+  }
+  .content .right{
+    margin-top: 40px;
+  }
+}
+@media (max-width:560px){
+  footer{
+    position: relative;
+  }
+  footer .content .box{
+    width: 100%;
+    margin-top: 30px;
+  }
+  footer .content .middle{
+    padding-left: 0;
+  }
+}
+
+
+
+
+
+
+</style>
+<head>
+    <body style="background-color: #46f3070f;">
+<div class="container">
+    <!-- <img class="logo" src="C:\Users\Hello\Downloads\WhatsApp Image 2021-12-15 at 7.34.29 PM.jpeg" >  -->
+    <ul class="navbar">
+        
+        <a href="anmpg1intro.html"><li  class="navcontent">Home</li></a> 
+        <li class="navcontent">Help</li>
+        <li class="navcontent">Support</li>
+        <li class="navcontent">News</li>
+        <li class="navcontent">Imformation</li>
+        <a href="aboutus.html"><li class="navcontent"> About us </li></a>
+    </ul> 
+</div>
+<h1 class="head">LET's FIND THE ZOO YOU WANT TO HELP </h1>
+<div class="searchdiv"><input class="searchbar" type="search" name="Serach" placeholder=" Search this area" id="">
+
+<a href="chtpag3type.html" class="zoo1a" href=""><div class="zoo1"><img class="zoo1pic" src="WhatsApp Image 2021-12-20 at 10.24.01 AM.jpeg" alt=""><span id="zoo1id" class="zoocntnt" > <h1>The Zoological Garden, Alipore</h1><br> also informally called the Alipore Zoo or Calcutta Zoo is India's oldest formally stated zoological park (as opposed to royal and British menageries) and a big tourist attraction in Kolkata, West Bengal. It has been open as a zoo since 1876, and covers 18.811 ha (46.48 acres). It is probably best known as the home of the now expired Aldabra giant tortoise Adwaita, who was reputed to have been over 250 years old when he died in 2006. It is also home to one of the few captive breeding projects involving the Manipur brow-antlered deer. One of the most popular tourist attractions in Kolkata, it draws huge crowds during the winter season, especially during December and January. The highest attendance till date was on January 1, 2018 with 110,000 visitors.The zoo had also been criticized for the quality of its animal/visitor interaction. Teasing of animals was a common occurrence at the zoo,[17] though corrective measures are now in place. On 1 January 1996 the tiger Shiva mauled two visitors as they tried to garland it, killing one,[18][19][20]Shiva was later shot and killed by the Indian Army. Another mauling leading to a death occurred in 2000. The zoo has also been criticized for its animal/keeper relations. A chimpanzee attacked and severely injured its keeper in Alipore Zoo, and numerous other incidents have been reported including the case of an elephant trampling its mahout to death in 1963 which had to be put down.[21] In 2001, it was revealed that zoo staff drugged the great Indian one-horned rhinoceros into relieving itself more often than normal, which enabled them to collect the urine and sell it on the black market as an anti-impotence medicine.</span></div></a>
+
+<a href="chtpag3type.html" class="zoo2a"><div class="zoo2"> <span id="zoo2id" class="zoocntnt">
+    <h1 class="zoo2head">Nehru Zoological Park</h1><br>
+    First of all the zoo has lost its charm ,from 1990 to 2004 the
+    zoo was better maintained and there was no exploitation
+    of tourists in the name of deposits for bags, water bottles &
+    paper bags.
+    there are no proper water and washroom arrangements for
+    tourists.we visited the zoo recently 2 days back.the train
+    ride is not available and safari closed since 20 days.whats
+    the use of seeing zoo withour these activities.
+    there were no signages mentioning that safari is closed and
+    train ride is not available. The park and grass are filthy with
+    drainage water.
+    The animals are badly maintained with only limited
+    no.s.tourits are returned back at the safari road which
+    contains animals like girafee, hippo,rhino,bear,horses etc.
+    There is no entry boards every where.</span><img class="zoo2pic" src="WhatsApp Image 2021-12-20 at 10.25.05 AM.jpeg" alt=""></div></a>
+<a href="chtpag3type.html" class="zoo3a" href=""><div class="zoo3"><img class="zoo3pic" src="WhatsApp Image 2021-12-20 at 10.26.55 AM.jpeg" alt=""> <span id="zoo3id" class="zoocntnt"> <h1>Mysore Zoo</h1><br> Now Mysuru Zoo officially the Sri Chamarajendra Zoological Gardens is a 157-acre (64 ha) zoo located near the palace in Mysore, India. It is one of the oldest and most popular zoos in India, and is home to a wide range of species . Mysore Zoo is one of the city's most popular attractions.
+
+    While mainly depending on entry fees for its financing, an adoption scheme introduced in the early 2000s has been a success. Celebrities, institutions, animal lovers and volunteers of various clubs in the zoo have contributed directly to the welfare of the zoo inhabitants.The zoo witnessed a series of animal deaths in 2004 and 2005. In August 2004, a Lion-tailed macaque was found mysteriously dead. An emu and a tiger were also reported to have died mysteriously. On 4 September 2004, an elephant died, reportedly of acute hemorrhagic enteritis and respiratory distress. It was reported that the illness in elephants was due to poisoning. As a safety measure, the zoo authority suspended several staff members who were allegedly responsible for the "gruesome killings". Laboratory tests later confirmed that the two elephants, named Ganesha and Roopa, had been poisoned. This was followed by another elephant death (Komala) on 7 September despite heightened security. Komala had been scheduled to be transferred to Armenia in about a month.
+
+    On 24 October 2005 another elephant, Rohan along with his mate Ansul, died with suspicions of poisoning. The elephants were supposed to be sent to Armenia as a goodwill gesture. The Chief Minister of Karnataka immediately ordered a probe into the death of Ansul and Rohan.
+    
+    4 January 2017, The zoo announced that it was hit by avian influenza. Lab reports confirmed that six free-ranging and migratory birds died due to avian influenza (H5N8) in late December. The monthlong closure is the longest for the 124-year-old Mysore Zoo</span></div></a>
+
+<a href="chtpag3type.html" class="zoo4a" href=""><div class="zoo4"><sPan id="zoo4id" class="zoocntnt"> <h1>Kanpur Zoological Park</h1><br> Kanpur is one of the oldest Zoological Park of india. It has been established and opened for the public on 4th february, 1974.
+    The area of the Zoological Park is about 76.56 ha. It is established in a manmade forest. The terrain of the park is undulating and resembles a high forest. It is one of those Zoological Park which have been built on modern Zoo building principles.
+    The animals inhabited in the Zoological Park have been put in open and moated enclosures. The moated enclosures give the animal ample space for movement and help in expressing their biological and physiological expressions. The enclosures are screened by terrain in such a way that one enclosure is not visible from the other.
+    Thus the animals inhabiting the enclosures do not feel undue psychological pressure of the animals of adjoining enclosures</sPan><img class="zoo4pic" src="WhatsApp Image 2021-12-20 at 10.27.20 AM.jpeg" alt=""> </div></a>
+
+    <footer>
+        <div class="content">
+          <div class="left box">
+            <div class="upper">
+              <div class="topic">About us</div>
+              <p>Paper Block is a platfoem from which one can directly donate to th zoo authorites and communities to help several animals in full filling their basic needs and to make them more comfortable for the zoo and improve their condition</p>
+            </div>
+            <div class="lower">
+              <div class="topic">Contact us</div>
+              <div class="phone">
+                <a href="#"><i class="fas fa-phone-volume"></i>1800-123456</a>
+              </div>
+              <div class="email">
+                <a href="#"><i class="fas fa-envelope"></i>paperblock@gmail.com</a>
+              </div>
+            </div>
+          </div>
+          <div class="middle box">
+            <div class="topic">Our Motto</div>
+            <div><a href="#">Increase the info about animals </a></div>
+            <div><a href="#">Raise awareness in humans</a></div>
+            <div><a href="#">Help animals living in zoo</a></div>
+            <div><a href="#">To hep in more vast area in future</a></div>
+            <div><a href="#">Incres living condition of animals</a></div>
+            <div><a href="#">Funding directly to zoo</a></div>
+          </div>
+          <div class="right box">
+            <div class="topic">Subscribe us</div>
+            <form action="#">
+              <input type="text" placeholder="Enter email address">
+              <input type="submit" name="" value="Send">
+              <div class="media-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </form>
+          </div>
+        </div>
+        
+</head>
+</body>
+</html>

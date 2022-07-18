@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aqua food</title>
+    <style>
+         *{
+            margin: 0;
+            padding: 0;
+        }
+        .container1{
+        display: flex;
+        justify-content: center;
+        background-color: #003933;}
+        
+    .navbar{    
+        display: flex;
+        list-style-type: none;}
+        
+    .navcontent{   
+        /* padding-left: 10px; */
+        margin: 13px;
+        font-size: 1.4em;
+        padding: 2px 10px;
+        color: white;
+        font-weight: bold}
+        
+    .navcontent:hover{
+        background-color: brown;
+        border: 0px solid brown;
+        border-radius: 10px;
+        cursor: pointer;}
+    .heading{
+        text-align: center;
+        margin: 14px auto 31px;
+        font-size: 3em;}
+        /* .container{} */
+    .aquacntnt{
+        margin: -14px 15px;
+        width: 100%;
+        border: 1px solid;
+        height: 379px;
+        background: #faeaeaad;}
+    .aquaimg{
+        height: 253px;
+        width: 430px;
+        transition: all 0.3s;}
+        .aquaimg:hover{
+        height: 303px;
+        box-shadow: 0 0 7px 7px gray;
+       
+    }
+    .aquaf{
+        margin: 12px;
+        font-size: 26px;
+        border: 1x solid;
+        border: 3px solid;
+        padding: 2px 8px;
+        border-radius: 17px;
+        background: #dbf8e9;}
+    .aqualist{
+        list-style: none;}
+    .aqua{
+        display: flex;
+        margin: 28px;}
+    .food{
+        border: 2px solid;
+        background: #eaedff;
+        border-radius: 21px;
+        height: 34px;
+        padding: 7px 19px 2px;}
+    .buying{    
+        display: flex;
+        border: 2px solid;
+        border-radius: 19px;
+        padding: 1px 17px 1px;
+        margin: 10px 0px 0px;
+        background: #dde3fa;}
+    .price{    
+        margin-top: 3px;}
+    .number{
+        width: 47px;
+        margin: 8px 12px;}
+    .imgdiv{    
+        border: 1px solid;
+        padding: 44px 13px;
+        height: 290px;
+        width: 430px;
+        margin-top: -12px;
+        background: #faeaeaad;}
+        .fnlbtn{justify-content: flex-end;
+    display: flex;
+}
+    .dntbtn{height: 100px;
+    width: 276px;
+    margin-bottom: 59px;
+    margin-right: 45px;
+    font-size: 2vw;
+    border: 2px solid;
+    border-radius: 44px;
+    background: antiquewhite;
+    box-shadow: 5px 6px;
+transition: all 0.6s;}
+    .dntbtn:hover{
+        height:150px ;
+        width: 350px;
+        font-size: 2em;
+        border-radius: 90px;
+        box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.082);
+        cursor: pointer;
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+footer *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+  text-decoration: none;
+}
+a{text-decoration: none;}
+footer{
+  width: 100%;
+  margin-top: 169px;
+  bottom: 0;
+  left: 0;
+  background: #111;
+}
+footer .content{
+  max-width: 1350px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+footer .content p,a{
+  color: #fff;
+}
+footer .content .box{
+  width: 33%;
+  transition: all 0.4s ease;
+}
+footer .content .topic{
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 16px;
+
+}
+footer .content p{
+  text-align: justify;
+}
+footer .content .lower .topic{
+  margin: 24px 0 5px 0;
+}
+footer .content .lower i{
+  padding-right: 16px;
+}
+footer .content .middle{
+  padding-left: 80px;
+}
+footer .content .middle a{
+  line-height: 32px;
+}
+footer .content .right input[type="text"]{
+  height: 45px;
+  width: 100%;
+  outline: none;
+  color: #d9d9d9;
+  background: #000;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 17px;
+  border: 2px solid #222222;
+}
+footer .content .right input[type="submit"]{
+  height: 42px;
+  width: 100%;
+  font-size: 18px;
+  color: black;
+  background: #06eb2f;
+  outline: none;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin-top: 12px;
+  border: 2px solid #06eb3f;
+  transition: all 0.3s ease-in-out;
+}
+.content .right input[type="submit"]:hover{
+  background: none;
+  color:  #06eb3f;
+}
+footer .content .media-icons a{
+  font-size: 16px;
+  height: 45px;
+  width: 45px;
+  display: inline-block;
+  text-align: center;
+  line-height: 43px;
+  border-radius: 5px;
+  border: 2px solid #222222;
+  margin: 30px 5px 0 0;
+  transition: all 0.3s ease;
+}
+.content .media-icons a:hover{
+  border-color: #06eb25;
+}
+footer .bottom{
+  width: 100%;
+  text-align: right;
+  color: #d9d9d9;
+  padding: 0 40px 5px 0;
+}
+footer .bottom a{
+  color: #06eb3f;
+}
+footer a{
+  transition: all 0.6s ease;
+}
+footer a:hover{
+  color: #06eb3f;
+}
+@media (max-width:1100px) {
+  footer .content .middle{
+    padding-left: 50px;
+  }
+}
+@media (max-width:950px){
+  footer .content .box{
+    width: 50%;
+  }
+  .content .right{
+    margin-top: 40px;
+  }
+}
+@media (max-width:560px){
+  footer{
+    position: relative;
+  }
+  footer .content .box{
+    width: 100%;
+    margin-top: 30px;
+  }
+  footer .content .middle{
+    padding-left: 0;
+  }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <!-- <img class="logo" src="C:\Users\Hello\Downloads\WhatsApp Image 2021-12-15 at 7.34.29 PM.jpeg" >  -->
+        <ul class="navbar">
+            
+            <a href="anmpg1intro.html"><li  class="navcontent">Home</li></a> 
+            <li class="navcontent">Help</li>
+            <li class="navcontent">Support</li>
+            <li class="navcontent">News</li>
+            <li class="navcontent">Imformation</li>
+            <a href="aboutus.html"><li class="navcontent"> About us </li></a>
+        </ul> 
+    </div>
+    <div class="head">
+        <h1 class="heading">
+            Lest select the animal who needs your Help
+        </h1>
+    </div>
+    <div class="container">
+        <div class="aqua">
+            
+           <div class="imgdiv"><div><h2 >Ocellate River Stingray</h2></div><br><img src=https://www.nashvillezoo.org/assets/2147/12_ocellate-river-stingray---2018---katie-gregory.jpg alt="Ocellate River Stingray" class="aquaimg" id="img1"></div> 
+            <div class="aquacntnt" id="aqua1cntnt">
+               
+                    <div class="aquaf"><p class="food">Small&nbsp;mousks</p>
+                    <div class="buying"><p class="price">price &#8377 80 </p>  <input class="number" type="number" min="0" placeholder="0"> </div> 
+                    </div>
+                    <div class="aquaf"><p class="food">Insects</p>
+                    <div class="buying"><p class="price">price &#8377 60</p>  <input class="number" type="number"min="0" placeholder="0"> </div> 
+                    </div>
+                    <div class="aquaf"><p class="food">Crustaceans</p>
+                    <div class="buying"><p class="price">price &#8377 70</p>  <input class="number" type="number" min="0" placeholder="0"> </div> 
+                    </div>
+            </div>
+        </div>
+
+        <div class="aqua">
+           
+            <div class="imgdiv"> <div><h2 >Lionfish</h2></div><br><img src=https://www.nashvillezoo.org/assets/2147/12_lionfish1.jpg alt="Lionfish" class="aquaimg" id="img2"></div> 
+            <div class="aquacntnt" id="aqua1cntnt1">
+                    <div class="aquaf"><p class="food">Aquatic&nbsp;invertebrates</p>
+                    <div class="buying"><p class="price"> price &#8377 40</p>  <input class="number" type="number" min="0" placeholder="0"> </div> 
+                    </div>
+                   
+                </div>
+            </div>
+            
+            <div class="aqua">
+                  
+            <div class="imgdiv"><div><h2 >Lined&nbsp;Seahorse</h2></div><br><img src=https://www.nashvillezoo.org/assets/2147/12_lined-seahorse.jpg alt="Lined Seahorse" class="aquaimg" id="img3"></div> 
+            <div class="aquacntnt" id="aqua1cntnt2">
+                    <div class="aquaf"><p class="food">Small&nbsp;crustaceans&nbsp;</p>
+                    <div class="buying"><p class="price">price &#8377 70</p>  <input class="number" type="number" min="0" placeholder="0"> </div> 
+                    </div>    
+                     
+                </div>
+            </div>
+            
+            <div class="aqua">
+                           
+            <div class="imgdiv"><div><h2 >Black&nbsp;Arowana</h2></div> <br><img src=https://www.nashvillezoo.org/assets/2147/12_black-arowana-web.jpg alt="Black Arowana" class="aquaimg" id="img4"></div> 
+            <div class="aquacntnt" id="aqua1cntnt3"> 
+                    <div class="aquaf"><p class="food">Fish</p>
+                    <div class="buying"><p class="price">price &#8377 80 </p>  <input class="number" type="number" min="0" placeholder="0"> </div> 
+                    </div>
+                    <div class="aquaf"><p class="food">Insects</p>
+                    <div class="buying"><p class="price">price &#8377 60</p>  <input class="number" type="number" min="0" placeholder="0"> </div> 
+                    </div>
+                    <div class="aquaf"><p class="food"> shrimp</p>
+                    <div class="buying"><p class="price">price &#8377 90</p>  <input class="number" type="number" min="0" placeholder="0"> </div> 
+                    </div>
+                </div>
+            </div>
+
+            <div class="aqua">
+                          
+            <div class="imgdiv"><div><h2>Red-Tail&nbsp;Triggerfish</h2></div> <br> <img src=https://www.nashvillezoo.org/assets/2147/12_6-30-14_red-tailed_triggerfish_-_amiee_stubbs.jpg alt="Red-Tail Triggerfish" class="aquaimg" id="img5"></div> 
+            <div class="aquacntnt" id="aqua1cntnt4"> 
+                <div class="aquaf"><p class="food">Crabs</p>
+                    <div class="buying"><p class="price">price &#8377 80</p>  <input class="number" type="number" min="0" placeholder="0"> </div> 
+                   </div>
+                    <div class="aquaf"><p class="food">sea&nbsp;urchin</p>
+                    <div class="buying"><p class="price">price &#8377 70</p>  <input class="number" type="number" min="0" placeholder="0"> </div> 
+                    </div>
+                        <div class="aquaf"><p class="food">plankton</p>
+                        <div class="buying"><p class="price">price &#8377 70</p>  <input class="number" type="number" min="0" placeholder="0"> </div> 
+                        </div>  
+                    </div>
+                </div>
+
+                <div class="aqua">
+                           
+            <div class="imgdiv"><div><h2>Redhead&nbsp;Cichlid</h2></div> <br><img src=https://www.nashvillezoo.org/assets/2147/12_red-head-cichlid---web.jpg alt="Redhead Cichlid" class="aquaimg" id="img6"></div> 
+            <div class="aquacntnt" id="aqua1cntnt5"> 
+                
+                        <div class="aquaf"><p class="food">Vegetables</p>
+                            <div class="buying"><p class="price">price &#8377 30</p>  <input class="number" type="number" min="0" placeholder="0"> </div> 
+                            </div>
+                            <div class="aquaf"><p class="food"> Aquatic plants</p>
+                            <div class="buying"><p class="price">price &#8377 30</p>  <input class="number" type="number" min="0" placeholder="0"> </div> 
+                            </div>
+                         <div class="aquaf"><p class="food"> Small&nbsp;crustaceans</p>
+                      <div class="buying"><p class="price">price &#8377 70</p>  <input class="number" type="number" min="0" placeholder="0"> </div> 
+                        </div> 
+                    </div>
+                </div>
+                
+                <div class="aqua">
+                           
+            <div class="imgdiv"><div><h2>Blue&nbsp;Tang&nbsp;Surgeon&nbsp;Fish</h2></div><br> <img src=https://www.nashvillezoo.org/assets/2147/12_blue-tang-surgeonfish.jpg alt="Blue Tang Surgeon Fish" class="aquaimg" id="img7"></div> 
+            <div class="aquacntnt" id="aqua1cntnt6"> 
+                   <div class="aquaf"><p class="food">Algae</p>
+                   <div class="buying"><p class="price">price &#8377 80</p>  <input class="number" type="number" min="0" placeholder="0"> </div> 
+            </div>
+        </div>
+    </div>
+    
+    <div class="aqua">
+                         
+            <div class="imgdiv"><div><h2>White-Blotched&nbsp;River&nbsp;Stingray</h2></div> <br>  <img src=https://www.nashvillezoo.org/assets/2147/12_white-blotched-stingray.jpg alt="White-Blotched River Stingray" class="aquaimg" id="img8"></div> 
+            <div class="aquacntnt" id="aqua1cntnt7"> 
+                  <div class="aquaf"><p class="food">Shrimp</p>
+                  <div class="buying"><p class="price">price &#8377 90</p>  <input class="number" type="number" min="0" placeholder="0"> </div> 
+                  </div>
+            
+                  <div class="aquaf"><p class="food">Crustaceans</p>
+                  <div class="buying"><p class="price">price &#8377 70</p>  <input class="number" type="number" min="0" placeholder="0"> </div> 
+                  </div>  
+                </div>
+            </div>
+            
+            <div class="aqua">
+                           
+            <div class="imgdiv"> <div><h2>Piranha</h2></div><br><img src=https://www.nashvillezoo.org/assets/2147/12_piranha2.jpg alt="Piranha" class="aquaimg" id="img9"></div> 
+            <div class="aquacntnt" id="aqua1cntnt8"> 
+                   <div class="aquaf"><p class="food">Small&nbsp;mousks</p>
+                    <div class="buying"><p class="price">price &#8377 80</p>  <input class="number" type="number" min="0" placeholder="0"> </div> 
+                   </div>
+                    <div class="aquaf"><p class="food">Insects</p>
+                    <div class="buying"><p class="price">price &#8377 90</p>  <input class="number" type="number" min="0" placeholder="0"> </div> 
+                    </div>
+                    <div class="aquaf"><p class="food">Crustaceans</p>
+                    <div class="buying"><p class="price">price &#8377 70</p>  <input class="number" type="number" min="0" placeholder="0"> </div> 
+                   </div>  
+                </div>
+            </div>
+            
+            <div class="aqua">
+                           
+            <div class="imgdiv"><div><h2>Jaguar&nbsp;Cichlid</h2></div><br> <img src=https://www.nashvillezoo.org/assets/2147/12_jaguar-cichlid---getty-images---web.jpg alt="Jaguar Cichlid" class="aquaimg" id="img10"></div> 
+            <div class="aquacntnt" id="aqua1cntnt9"> 
+                <div class="aquaf"><p class="food">Aquatic&nbsp;invertebrates</p>
+                    <div class="buying"><p class="price">price &#8377 80</p>  <input class="number" type="number" min="0" placeholder="0"> </div> 
+                   </div>
+                    <div class="aquaf"><p class="food"> land-based&nbsp;vertebrates</p>
+                    <div class="buying"><p class="price">price &#8377 90 </p>  <input class="number" type="number" min="0" placeholder="0"> </div> 
+                    </div>
+                </div>
+            </div>
+            
+            <div class="aqua">
+                          
+            <div class="imgdiv"><div><h2>Bluehead&nbsp;Wrasse</h2></div> <br> <img src=https://www.nashvillezoo.org/assets/2147/12_bluehead-wrasse-web.jpg alt="Bluehead Wrasse" class="aquaimg" id="img11"></div> 
+            <div class="aquacntnt" id="aqua1cntnt10"> 
+                <div class="aquaf"><p class="food">Zooplankton</p>
+                <div class="buying"><p class="price">price &#8377 100</p>  <input class="number" type="number" min="0" placeholder="0"> </div> 
+               </div>
+                <div class="aquaf"><p class="food">Small&nbsp;aquatic&nbsp;organisms</p> 
+                <div class="buying"><p class="price">price &#8377 80</p>  <input class="number" type="number" min="0" placeholder="0"> </div> 
+                </div>
+            </div>
+        </div>                                     
+        <div class="fnlbtn">
+            <a href="payment.html"><button class="dntbtn">Proceed to pay</button></a>
+        </div>
+    </div>
+    <footer>
+        <div class="content">
+          <div class="left box">
+            <div class="upper">
+              <div class="topic">About us</div>
+              <p>Paper Block is a platfoem from which one can directly donate to th zoo authorites and communities to help several animals in full filling their basic needs and to make them more comfortable for the zoo and improve their condition</p>
+            </div>
+            <div class="lower">
+              <div class="topic">Contact us</div>
+              <div class="phone">
+                <a href="#"><i class="fas fa-phone-volume"></i>1800-123456</a>
+              </div>
+              <div class="email">
+                <a href="#"><i class="fas fa-envelope"></i>paperblock@gmail.com</a>
+              </div>
+            </div>
+          </div>
+          <div class="middle box">
+            <div class="topic">Our Motto</div>
+            <div><a href="#">Increase the info about animals </a></div>
+            <div><a href="#">Raise awareness in humans</a></div>
+            <div><a href="#">Help animals living in zoo</a></div>
+            <div><a href="#">To hep in more vast area in future</a></div>
+            <div><a href="#">Incres living condition of animals</a></div>
+            <div><a href="#">Funding directly to zoo</a></div>
+          </div>
+          <div class="right box">
+            <div class="topic">Subscribe us</div>
+            <form action="#">
+              <input type="text" placeholder="Enter email address">
+              <input type="submit" name="" value="Send">
+              <div class="media-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="bottom">
+          <p>Copyright © 2022 <a href="#">Paper Block</a> All rights reserved</p>
+        </div>
+      </footer>
+</body>
+</html>
